@@ -1,0 +1,196 @@
+/********************************/
+/*         Content List         */
+/********************************/
+
+/*   
+1. heading
+2. mempelai
+3. surat
+
+
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Marck+Script&display=swap");
+
+/********************************/
+/*         Desktop View         */
+/********************************/
+
+.card_top {
+  border-top: 10px solid rgba(132, 144, 170, 0.5);
+}
+
+.wave-container {
+  position: relative;
+  background: rgba(205 213 225);
+  text-align: center;
+  overflow: hidden;
+}
+
+iframe {
+  border: 5px solid rgba(132, 144, 170, 0.5);
+}
+
+/* Heading */
+
+#heading {
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: grayscale(0.5) opacity(0.8);
+  background: linear-gradient(
+      0deg,
+      rgba(200, 186, 193, 0.8),
+      rgba(132, 144, 170, 0.8)
+    ),
+    url("img/1.jpg");
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+#heading h1 {
+  font-family: "Great Vibes";
+  font-size: 5em;
+}
+
+#heading h6 {
+  letter-spacing: 4.6px;
+}
+
+/* Mempelai */
+
+#mempelai {
+  background: linear-gradient(0deg, rgba(200, 186, 193), rgba(132, 144, 170));
+}
+
+#mempelai .mempelai-nama {
+  font-family: "Great Vibes";
+}
+
+#mempelai h2,
+.mempelai-judul-galeri {
+  font-family: "Allura";
+  font-size: 3em;
+}
+
+/* surat */
+
+#surat {
+  height: 100vh;
+  backdrop-filter: grayscale(0.5) opacity(0.8);
+  background: linear-gradient(0deg, rgb(13 110 253 / 25%), #212529),
+    url("img/2.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+#surat h4 {
+  font-family: "Marck Script";
+  font-weight: normal;
+  font-size: 2em;
+}
+
+#surat h2 {
+  font-family: "Marck Script";
+  font-weight: normal;
+  font-size: 2em;
+}
+
+/* resepsi */
+
+#resepsi {
+  background: linear-gradient(0deg, rgba(205 213 225), rgba(200, 186, 193));
+}
+
+#resepsi .countdown h1 {
+  color: #626262;
+}
+
+#resepsi .resepsi-judul {
+  font-family: "Allura";
+  font-size: 3em;
+}
+
+#resepsi .tgl-nikah h5 {
+  font-size: 2em;
+  font-family: "Great Vibes";
+}
+#resepsi .tgl-nikah i {
+  font-size: 2em;
+  color: #cac8d2;
+  margin-bottom: 20px;
+}
+
+#resepsi .tgl-nikah p {
+  font-weight: 500;
+  color: #626262;
+}
+
+/* Pesan */
+
+#pesan {
+  background-color: #f0dcdc;
+}
+
+#pesan .container {
+  background: rgba(255, 255, 255, 0.486);
+  padding-bottom: 50px;
+  border-radius: 10px;
+}
+
+#pesan label {
+  color: #696969;
+}
+
+#pesan .pesan-judul {
+  font-family: "Allura";
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.chatbox {
+  width: 100%;
+  height: 400px;
+  background: #c7b9c0;
+}
+
+.chatbox .card-body:after,
+.chatbox .chatbox:before {
+  border-width: 10px 10px 10px 0;
+  border-style: solid;
+  border-color: transparent #fff;
+  content: "";
+  left: -10px;
+  position: absolute;
+  top: 9px;
+}
+
+#footer {
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: grayscale(0.5) opacity(0.8);
+  background: linear-gradient(
+      0deg,
+      rgba(132, 144, 170, 0.8),
+      rgba(240, 219, 219, 1)
+    ),
+    url("img/1.jpg");
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+#footer h1 {
+  font-family: "Great Vibes";
+}
+/********************************/
+/*         Mobile View          */
+/********************************/
