@@ -3,10 +3,7 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta
-      content="Website undangan pernikahan online"
-      name="undangan digital"
-    />
+    <meta name="description" content="Undangan digital pernikahan Rais X Mala by Drevi"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
@@ -17,174 +14,204 @@
       crossorigin="anonymous"
     />
 
-    <!-- Font Awesome solid -->
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/brands.min.css" integrity="sha512-BglNUJaVmT9HacZ2AsbVQxjswBmIf3AJj9hhXr/Yre33qU+A1p8gXUcavzcHYkWf5bIvLMIiEbdMrEVqb5h2Rg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- AOS css -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
 
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
     <title>Rais X Mala</title>
   </head>
   <body>
+    <!-- Modal -->
+    <div class="modal fade" id="modal" aria-hidden="true" aria-labelledby="modal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <h6 class="text-white mb-5 text-center">UNDANGAN PERNIKAHAN</h6>
+            <h1 class="text-white text-center mb-5">Rais & Mala</h1>
+            <button class="btn" data-bs-dismiss="modal" onclick="playMusik()"><i class="fas fa-map"></i> Buka</button>
+          </div>
+        </div>
+    </div>
+    <!-- End Modal -->
+
+    <!-- Float button -->
+    <a class="float" onclick="togglePause()">
+      <span id="ikon-musik"></span>
+    </a>
+    <!-- Float button -->
+
+    <!-- scroll to top -->
+    <a class="scroll" id="toTop" onclick="toTop()">
+      <i class="fas fa-arrow-up my-float"></i>
+    </a>
+    <!-- scroll to top -->
+
     <div id="top">
       <div id="heading" class="d-flex">
         <div class="card-img-overlay d-flex">
           <div class="my-auto mx-auto text-center text-white lh-1">
-            <object data="separator/1.svg" width="200"></object>
-            <h6 class="mb-5">WE ARE GETTING MARRIED</h6>
-            <h1 class="my-3">Rais & Mala</h1>
-            <h6>27 Maret 2020</h6>
-            <object
-              data="separator/1.svg"
+            <img src="separator/1.svg" width="200" id="t1" />
+            <h6 class="mb-5" id="t2">WE ARE GETTING MARRIED</h6>
+            <h1 class="my-3" id="t3">Rais & Mala</h1>
+            <h6 id="t4">27 Maret 2020</h6>
+            <img
+              src="separator/1.svg"
               width="200"
               style="transform: scaleY(-1)"
-            ></object>
+              id="t5"
+            />
             <br>
-             <!-- Button code -->
-             <div title="Add to Calendar" class="addeventatc mt-5">
-              Add to Calendar
-              <span class="start">03/27/2022 09:00 AM</span>
-              <span class="end">03/27/2022 11:00 AM</span>
-              <span class="timezone">Indonesia/Jakarta</span>
-              <span class="title">Pernikahan Rais & Mala</span>
-              <span class="description">Acara resepsi penikahan Rais & Mala</span>
-            </div>
+            <a title="Add to Calendar" class="addeventatc mt-5 t6" style="color: #fff !important;" data-id="il12895471" href="https://www.addevent.com/event/il12895471" target="_blank" rel="nofollow">Add to Calendar</a>
           </div>
         </div>
       </div>
     </div>
 
-    <div id="mempelai" class="p-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center mt-5">
-            <h6 class="text-white">Tentang Kami</h6>
-            <h2 class="mt-3 text-white">Pasangan Mempelai</h2>
-          </div>
-        </div>
+    <div class="container p-4">
+      <div class="col-12 col-md-6 offset-md-3 ar-rum">
+        <img class="img-fluid mx-auto d-block" src="img/flower.png" alt="bunga" data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500">
+        <h6 class="text-center fst-italic text-muted" data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500">"Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir."</h6>
+        <h5 class="text-center fst-italic" data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500">Q.S Ar-Rum Ayat 21</h5>
 
-        <div class="row">
-          <div
-            class="col-12 col-md-5 text-center mt-5 bg-white p-5 rounded-3 card_top"
-          >
-            <img
-              class="img-fluid"
-              src="https://dummyimage.com/300x300/c7c7c7/fff.jpg"
-              alt="mempelai lelaki"
-            />
-            <h3 class="mt-3 mempelai-nama">Muhammad Rais Azizi</h3>
-            <p class="text-muted">Putra pertama dari </h6>
-            <p class="fst-italic">Bapak Taufik Agus Supriyadi & Ibu Sri Lestari</p>
+      </div>
+    </div>
+
+    <div id="mempelai" class="p-4 p-md-5" data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500">
+      <div class="container">
+        <div class="row card_shadow card_rounded">
+          <div class="col-12 text-center mt-5">
+            <h1 class="mt-3 text-dark" data-aos="fade-down" data-aos="fade-down" data-aos-duration="2500">Pasangan Mempelai</h1>
           </div>
           <div
-            class="col-12 col-md-5 offset-md-2 text-center mt-5 bg-white p-5 rounded-3 card_top"
+            class="col-12 col-md-6 text-center mt-5 bg-white p-5 card_rounded" data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500"
           >
             <img
               class="img-fluid"
-              src="https://dummyimage.com/300x300/c7c7c7/fff.jpg"
+              src="img/male.png"
               alt="mempelai lelaki"
+              data-aos="fade-down" data-aos="fade-down" data-aos-duration="2500"
             />
-            <h3 class="mt-3 mempelai-nama">Aunur Kumala</h3>
-            <p class="text-muted">Putri ketiga dari</p>
-            <p class="fst-italic">Bapak Thoyib Wagimin (Alm) & Ibu Dalmiyati</p>
+            <h3 class="mt-3 mempelai-nama" data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500">Muhammad Rais Azizi</h3>
+            <p class="text-muted anak-dari" data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500">Putra pertama dari </h6>
+            <p class="fst-italic orang-tua" data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500">Bapak Taufik Agus Supriyadi & Ibu Sri Lestari</p>
+          </div>
+          <div
+            class="col-12 col-md-6 text-center mt-5 bg-white p-5 card_rounded" data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500"
+          >
+            <img
+              class="img-fluid"
+              src="img/female.png"
+              alt="mempelai lelaki"
+              data-aos="fade-down" data-aos="fade-down" data-aos-duration="2500"
+            />
+            <h3 class="mt-3 mempelai-nama" data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500">Aunur Kumala</h3>
+            <p class="text-muted anak-dari" data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500">Putri ketiga dari</p>
+            <p class="fst-italic orang-tua" data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500">Bapak Thoyib Wagimin (Alm) & Ibu Dalmiyati</p>
           </div>
         </div>
 
         <span class="d-flex justify-content-center">
-          <object data="separator/3.svg" width="400"></object>
+          <img src="separator/3.svg" class="separator-content" data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500"/>
         </span>
 
         <div class="row mb-5">
           <div class="col-12 text-center">
-            <h1 class="text-white mempelai-judul-galeri">We love each other</h1>
+            <h1 class="text-dark mempelai-judul-galeri" data-aos="fade-down" data-aos="fade-down" data-aos-duration="2500">We love each other</h1>
           </div>
         </div>
 
-        <div class="row gy-3">
+        <div class="row gy-3" style="margin-bottom: 100px;">
           <div class="col-12 col-md-4">
             <img
-              src="https://images.unsplash.com/photo-1532465989240-a53112c31aba?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3227c91f71facd3a64e91cb7e346cb17&auto=format&fit=crop&w=1450&q=50&h=825"
-              class="img-fluid rounded-3"
+              src="img/g1.jpg"
+              class="img-fluid rounded-3  card_shadow"
+              data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500"
             />
           </div>
           <div class="col-12 col-md-4">
             <img
-              src="https://images.unsplash.com/photo-1532465989240-a53112c31aba?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3227c91f71facd3a64e91cb7e346cb17&auto=format&fit=crop&w=1450&q=50&h=825"
-              class="img-fluid rounded-3"
+              src="img/g2.jpg"
+              class="img-fluid rounded-3  card_shadow"
+              data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500"
             />
           </div>
           <div class="col-12 col-md-4">
             <img
-              src="https://images.unsplash.com/photo-1532465989240-a53112c31aba?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3227c91f71facd3a64e91cb7e346cb17&auto=format&fit=crop&w=1450&q=50&h=825"
-              class="img-fluid rounded-3"
+              src="img/g3.jpg"
+              class="img-fluid rounded-3  card_shadow"
+              data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500"
             />
           </div>
           <div class="col-12 col-md-4">
             <img
-              src="https://images.unsplash.com/photo-1532465989240-a53112c31aba?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3227c91f71facd3a64e91cb7e346cb17&auto=format&fit=crop&w=1450&q=50&h=825"
-              class="img-fluid rounded-3"
+              src="img/g4.jpg"
+              class="img-fluid rounded-3  card_shadow"
+              data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500"
             />
           </div>
           <div class="col-12 col-md-4">
             <img
-              src="https://images.unsplash.com/photo-1532465989240-a53112c31aba?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3227c91f71facd3a64e91cb7e346cb17&auto=format&fit=crop&w=1450&q=50&h=825"
-              class="img-fluid rounded-3"
+              src="img/g5.jpg"
+              class="img-fluid rounded-3  card_shadow"
+              data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500"
             />
           </div>
           <div class="col-12 col-md-4">
             <img
-              src="https://images.unsplash.com/photo-1532465989240-a53112c31aba?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3227c91f71facd3a64e91cb7e346cb17&auto=format&fit=crop&w=1450&q=50&h=825"
-              class="img-fluid rounded-3"
+              src="img/g6.jpg"
+              class="img-fluid rounded-3  card_shadow"
+              data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500"
             />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="surat">
-      <div class="card-img-overlay d-flex">
-        <div class="my-auto mx-auto text-center text-white">
-          <div class="container">
-            <h4 class="mb-5 fw-normal">
-              "Dan di antara tanda-tanda kekuasaan-Nya diciptakan-Nya untukmu
-              pasangan hidup dari jenismu sendiri supaya kamu dapat ketenangan
-              hati dan dijadikannya kasih sayang di antara kamu. Sesungguhnya
-              yang demikian menjadi tanda-tanda kebesaran-Nya bagi orang-orang
-              yang berpikir."
-            </h4>
-            <h2>- Q.S. Ar-Rum: 21 -</h2>
           </div>
         </div>
       </div>
     </div>
 
-    <div id="resepsi" class="p-5 pb-0">
+    <div id="video">
+      <div class="container">
+        <h1 class="text-white text-center" data-aos="fade-down" data-aos="fade-down" data-aos-duration="2500">Our Videos</h1>
+          <div class="card-img-overlay d-flex">
+            <div class="my-auto mx-auto text-center">
+              <video src="video/video.mp4" controls poster="img/2.jpg"></video>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div id="resepsi" class="p-4 p-md-5 pb-0">
       <div class="container">
         <!-- Countdown -->
         <div class="row">
           <div class="col-12 text-center mt-5">
-            <h6 class="text-white resepsi-tag">Hari spesial</h6>
-            <h2 class="mt-3 text-white resepsi-judul">Pernikahan Kita</h2>
+            <h6 class="text-dark resepsi-tag" data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500">Hari spesial</h6>
+            <h2 class="mt-3 text-dark resepsi-judul"data-aos="fade-down" data-aos="fade-down" data-aos-duration="2500">Pernikahan Kita</h2>
             <div class="d-flex justify-content-center mt-5 countdown">
-              <div class="hari mx-3 bg-white p-3 rounded-3">
+              <div class="hari mx-1 mx-md-3 bg-white p-3 rounded-3 countdown-box">
                 <h1 id="hari">0</h1>
                 <p>hari</p>
               </div>
-              <div class="jam mx-3 bg-white p-3 rounded-3">
+              <div class="jam mx-1 mx-md-3 bg-white p-3 rounded-3 countdown-box">
                 <h1 id="jam">0</h1>
                 <p>jam</p>
               </div>
-              <div class="menit mx-3 bg-white p-3 rounded-3">
+              <div class="menit mx-1 mx-md-3 bg-white p-3 rounded-3 countdown-box">
                 <h1 id="menit">4</h1>
                 <p>menit</p>
               </div>
-              <div class="detik mx-3 bg-white p-3 rounded-3">
+              <div class="detik mx-1 mx-md-3 bg-white p-3 rounded-3 countdown-box">
                 <h1 id="detik">0</h1>
                 <p>detik</p>
               </div>
@@ -194,41 +221,41 @@
 
         <div class="row tgl-nikah">
           <div
-            class="col-12 col-md-5 text-center mt-5 bg-white p-3 rounded-3 card_top"
+            class="col-12 col-md-5 text-center mt-5 bg-white p-3 card_shadow card_rounded" data-aos="fade-down" data-aos="fade-down" data-aos-duration="2500"
           >
-            <h5 class="mt-3">Akad Nikah</h5>
+            <h5 class="mt-3" data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500">Akad Nikah</h5>
             <div class="row mt-5">
               <div class="col-6">
-                <i class="fas fa-calendar"></i>
-                <p>20 Maret 2022</p>
+                <i class="fas fa-calendar" data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500"></i>
+                <p data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500">20 Maret 2022</p>
               </div>
               <div class="col-6">
-                <i class="fas fa-clock"></i>
-                <p>07:30 WIB</p>
+                <i class="fas fa-clock" data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500"></i>
+                <p data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500">07:30 WIB</p>
               </div>
               <div class="col-12">
-                <i class="fas fa-map-marker-alt"></i>
-                <p>Masjid Al Mabrur Embarkasi Haji</p>
+                <i class="fas fa-map-marker-alt" data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500"></i>
+                <p data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500">Masjid Al Mabrur Embarkasi Haji</p>
               </div>
             </div>
           </div>
           <!--  -->
           <div
-            class="col-12 col-md-5 offset-md-2 text-center mt-5 bg-white p-3 rounded-3 card_top"
+            class="col-12 col-md-5 offset-md-2 text-center mt-5 bg-white p-3 card_shadow card_rounded" data-aos="fade-down" data-aos="fade-down" data-aos-duration="2500"
           >
-            <h5 class="mt-3">Resepsi</h5>
+            <h5 class="mt-3" data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500">Resepsi</h5>
             <div class="row mt-5">
               <div class="col-6">
-                <i class="fas fa-calendar"></i>
-                <p>27 Maret 2022</p>
+                <i class="fas fa-calendar" data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500"></i>
+                <p data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500">27 Maret 2022</p>
               </div>
               <div class="col-6">
-                <i class="fas fa-clock"></i>
-                <p>09:00 WIB</p>
+                <i class="fas fa-clock" data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500"></i>
+                <p data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500">09:00 WIB</p>
               </div>
               <div class="col-12">
-                <i class="fas fa-map-marker-alt"></i>
-                <p>Gedung Serba Guna H.M Rois</p>
+                <i class="fas fa-map-marker-alt" data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500"></i>
+                <p data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500">Gedung Serba Guna H.M Rois</p>
               </div>
             </div>
           </div>
@@ -241,44 +268,88 @@
               allowfullscreen=""
               loading="lazy"
               class="mt-5 rounded-3"
+              data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500"
             ></iframe>
           </div>
         </div>
 
         <span class="d-flex justify-content-center">
-          <object data="separator/3.svg" width="400"></object>
+          <img src="separator/3.svg" class="separator-content" data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500"/>
         </span>
       </div>
     </div>
 
-    <div class="wave-container">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220">
-        <path
-          fill="#f0dcdc"
-          fill-opacity="1"
-          d="M0,128L80,144C160,160,320,192,480,186.7C640,181,800,139,960,133.3C1120,128,1280,160,1360,176L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-        ></path>
-      </svg>
+    <div id="story" class="p-4 p-md-5 pb-0">
+      <div class="container">
+        
+        <div class="row">
+          <div class="col-12 col-md-6 offset-md-3">
+            <h1 class="text-center" data-aos="fade-down" data-aos="fade-down" data-aos-duration="2500">Our Stories</h1>
+          </div>
+        </div>
+
+        <div class="row my-5 g-5">
+          <div class="col-12 col-md-6">
+            <img src="img/s1.jpg" class="img-fluid mx-auto d-block" data-aos="fade-down" data-aos="fade-down" data-aos-duration="2500">
+          </div>
+          <div class="col-12 col-md-6">
+            <h3 data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500">When we first meet</h3>
+            <p data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500">Berpapasan di tahun 2021 pada bulan Juli disebuah supermarket didaerah Boyolali, kami bertemu dengan rasa saling tertarik karena keelokan sikap masing masing.</p>
+            <p data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500">Kami yang melakukan aktivitas seperti biasa, berbicara tanpa mengungkapkan rasa, tanpa bertanya apa ada kontak yang  bisa saling dihubungi. Dan hari itu berakhir tanpa ada kata "bolehkah saya menghubungimu".</p>
+            <p data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500">Dihari lain rasa yang pernah hilang hadir kembali ditempat yang sama di tanggal yang berbeda.
+              Kami bertemu dan berbicara, hingga Saya ( Rais ) mendapatkan instagramnya. Dan seolah mendapat tanda inikah jalanya.
+            </p>
+          </div>
+        </div>
+        
+        <div class="row my-5 g-5 flex-md-row-reverse">
+          <div class="col-12 col-md-6">
+            <img src="img/s2.jpg" class="img-fluid mx-auto d-block" data-aos="fade-down" data-aos="fade-down" data-aos-duration="2500">
+          </div>
+          <div class="col-12 col-md-6">
+            <h3 data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500">Relationship</h3>
+            <p data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500">Hubungan kami yang sempat renggang, Terjawab pada 13 Agustus 2021, dimana notifikasi dari Instagram memberitahu "Anda telah diikuti oleh Kumala", Seolah memberitahu kami bisa saling mengenal satu sama lain.</p>
+            <p data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500">Berawal dari ucapan terimakasih, hingga mempunyai hobi ridding bersama, kita melalui hari hari
+              dengan saling mengenal satu sama lain sebagai teman dengan hobi yang sama. Hingga bulan Desember kami mulai saling merasa "Tertarik".</p>
+          </div>
+        </div>
+
+        <div class="row my-5 g-5">
+          <div class="col-12 col-md-6">
+            <img src="img/s3.jpg" class="img-fluid mx-auto d-block" data-aos="fade-down" data-aos="fade-down" data-aos-duration="2500">
+          </div>
+          <div class="col-12 col-md-6">
+            <h3 data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500">Engagement</h3>
+            <p data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500">Dan berkat keyakinan kami, dengan keyakinan doa masing masing, bulan Januari Saya ( Rais ) mengatakan "aku pengen serius sama kamu".</p>
+            <p data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500">Dengan restu kedua Orang Tua dan kemantapan hati, kami memutuskan untuk mengikat janji suci untuk sehidup semati, menjadi pasangan suami istri pada 20 Maret 2022.</p>
+            <p data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500">Dari awal bertemu hingga ke jenjang yang lebih serius. Akhirnya kami menyadari suatu hal.
+            Jika Engkau mencintai seseorang, berdoalah untuk mereka. Berdoalah untuk kedamaian mereka. Berdoalah untuk kemajuan mereka. Berdoalah untuk kesuksesan mereka. Berdoalah untuk kebahagiaan mereka
+              Bila Allah menginginkan dua hati untuk bersatu, Dia akan menggerakkan keduanya, bukan hanya satu.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
 
-    <div id="pesan" class="p-5">
+
+    <div id="pesan" class="p-4 p-md-5" data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center mt-5">
-            <h6 class="text-white">Kirimkan pesan</h6>
-            <h2 class="mt-3 text-white pesan-judul">Untuk Kami berdua</h2>
+            <h6 class="text-white" data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500">Kirimkan pesan</h6>
+            <h2 class="mt-3 pesan-judul" data-aos="fade-down" data-aos="fade-down" data-aos-duration="2500">Untuk Kami berdua</h2>
           </div>
-          <form class="needs-validation" novalidate id="form-pesan">
+          <form id="form-pesan">
             <div class="col-12 col-md-6 offset-md-3 mt-5">
               <div class="mb-3">
-                <label for="nama" class="form-label">Nama</label>
-                <input type="text" class="form-control" id="nama" required />
+                <label for="nama" class="form-label" data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500">Nama</label>
+                <input type="text" class="form-control" id="nama" required data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500"/>
               </div>
               <div class="mb-3">
-                <label for="isi" class="form-label">Pesan</label>
-                <textarea class="form-control" id="isi" rows="3" required></textarea>
+                <label for="isi" class="form-label" data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500">Pesan</label>
+                <textarea class="form-control" id="isi" rows="3" required data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500"></textarea>
               </div>
-              <div class="form-check">
+              <div class="form-check" data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500">
                 <input
                   class="form-check-input"
                   type="radio"
@@ -289,7 +360,7 @@
                 />
                 <label class="form-check-label" for="hadir"> Hadir </label>
               </div>
-              <div class="form-check">
+              <div class="form-check" data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500">
                 <input
                   class="form-check-input"
                   type="radio"
@@ -302,14 +373,109 @@
                   Tidak hadir
                 </label>
               </div>
-              <div class="mt-3">
-                <button id="kirim" class="btn btn-primary w-100">Kirim</button>
+              <div class="mt-3" data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500">
+                <button id="kirim" class="btn w-100 text-white" style="background-color: #a59071;">Kirim</button>
               </div>
           </form>
-
             <!-- chat box -->
-            <div class="chatbox overflow-auto mt-3 p-3 rounded-3">
+            <div class="chatbox overflow-auto mt-3 p-3 rounded-3" data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500">
               <div id="chat"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- <div id="pesan" class="p-3 p-md-5">
+      <div class="container">
+        <div class="row">     
+          <div class="col-12 text-center mt-5">
+            <h2 class="mt-3 text-white pesan-judul">Wedding Gift</h2>
+          </div>
+
+          <div class="col-12 col-md-6 d-flex justify-content-center">
+            <div class="cc mt-5">
+              <figure class="card__figure">
+                <img src="img/mandiri.png" class="card__figure--logo"></img>
+              </figure>
+            <div class="card__reader">
+              <div class="card__reader--risk card__reader--risk-one"></div>
+              <div class="card__reader--risk card__reader--risk-two"></div>
+               <div class="card__reader--risk card__reader--risk-three"></div>
+              <div class="card__reader--risk card__reader--risk-four"></div>
+            </div>
+            <p class="card__number">1380019172225</p>
+            <p class="card__name">MUHAMMAD RAIS AZIZI<p>
+            </div>            
+          </div>
+          <div class="col-12 col-md-6 d-flex justify-content-center">
+            <div class="cc mt-5">
+              <figure class="card__figure">
+                <img src="img/bri.png" class="card__figure--logo"></img>
+              </figure>
+            <div class="card__reader">
+              <div class="card__reader--risk card__reader--risk-one"></div>
+              <div class="card__reader--risk card__reader--risk-two"></div>
+               <div class="card__reader--risk card__reader--risk-three"></div>
+              <div class="card__reader--risk card__reader--risk-four"></div>
+            </div>
+            <p class="card__number">1297 0100 6345 509</p>
+            <p class="card__name">MUHAMMAD RAIS AZIZI<p>
+            </div>            
+          </div>
+            <div class="mt-5">
+              <svg id="" preserveAspectRatio="xMidYMax meet" class="w-100" viewBox="0 0 1600 200" style="display: block;" data-height="200">
+          <polygon class="" style="fill: #ecf0f1" points="1611.912,205.954 -14.224,206 -9.912,2.046 1616.224,162.165 "></polygon> 
+          <polygon class="" style="opacity: 1;fill: #59abe3;" points="167.262,39.589 107.551,33.709 123.443,15.177 183.154,21.057 "></polygon> 
+          <polygon class="" style="opacity: 1;fill: #d2527f;" points="286.684,51.348 226.973,45.468 242.865,26.936 302.577,32.816 "></polygon> 
+          <polygon class="" style="opacity: 1;fill: #d2527f;" points="47.839,27.83 -11.872,21.95 4.021,3.418 63.732,9.298 "></polygon> 
+          <polygon class="" style="opacity: 1;fill: #59abe3;" points="406.107,63.107 346.395,57.227 362.288,38.695 421.999,44.575 "></polygon> 
+          <polygon class="" style="opacity: 1;fill: #d2527f;" points="525.529,74.866 465.818,68.986 481.71,50.454 541.422,56.334 "></polygon> 
+          <polygon class="" style="opacity: 1;fill: #59abe3;" points="644.952,86.625 585.24,80.745 601.133,62.213 660.844,68.093 "></polygon> 
+          <polygon class="" style="opacity: 1;fill: #d2527f;" points="764.374,98.384 704.663,92.504 720.555,73.973 780.267,79.852 "></polygon> 
+          <polygon class="" style="opacity: 1;fill: #59abe3;" points="883.797,110.143 824.085,104.263 839.978,85.732 899.689,91.611 "></polygon> 
+          <polygon class="" style="opacity: 1;fill: #d2527f;" points="1003.219,121.902 943.508,116.023 959.4,97.491 1019.111,103.37 "></polygon> 
+          <polygon class="" style="opacity: 1;fill: #59abe3;" points="1122.641,133.661 1062.93,127.782 1078.823,109.25 1138.534,115.129 "></polygon> 
+          <polygon class="" style="opacity: 1;fill: #d2527f;" points="1242.064,145.42 1182.353,139.541 1198.245,121.009 1257.956,126.888 "></polygon> 
+          <polygon class="" style="opacity: 1;fill: #59abe3;" points="1361.486,157.179 1301.775,151.3 1317.668,132.768 1377.379,138.647 "></polygon> 
+          <polygon class="" style="opacity: 1;fill: #d2527f;" points="1480.909,168.938 1421.198,163.059 1437.09,144.527 1496.801,150.406 "></polygon> 
+          <polygon class="" style="opacity: 1;fill: #59abe3;" points="1600.331,180.697 1540.62,174.818 1556.513,156.286 1616.224,162.165 "></polygon></svg>
+          </div>
+          <div class="col-12 p-0 mx-auto" style="background-color: #ecf0f1; width: calc(100% - 4px);">
+            <div class="text-center pb-5 alamat-pengiriman">
+              <h3 class="mb-3">Alamat pengiriman hadiah fisik</h3>
+              <h6>Nama : Rais / Mala</h6>
+              <h6>Alamat : Perum Griya Mertan Indah</h6>
+              <h6>Unnamed Road, Pojok, Mertan, Kec. Bendosari, Kabupaten Sukoharjo, Jawa Tengah 57528</h6>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div> -->
+
+    <div id="carousel" class="p-4 my-5" data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center flex-column align-items-center">
+            <object data="svg/marry.svg" data-aos="fade-down" data-aos="fade-down" data-aos-duration="2500"></object>
+            <h6 class="text-center text-muted fst-italic mt-5" data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500">"Two soul but singgle thought, two hearts that beats as one."</h6>
+          </div>
+          <div class="col-12" data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500">
+            <div class="owl-carousel py-5" data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500">
+              <div> <img src="img/c1.jpg"> </div>
+              <div> <img src="img/c2.jpg"> </div>
+              <div> <img src="img/c3.jpg"> </div>
+              <div> <img src="img/c4.jpg"> </div>
+              <div> <img src="img/c5.jpg"> </div>
+              <div> <img src="img/c6.jpg"> </div>
+              <div> <img src="img/c7.jpg"> </div>
+              <div> <img src="img/c8.jpg"> </div>
+              <div> <img src="img/c9.jpg"> </div>
+              <div> <img src="img/c10.jpg"> </div>
+              <div> <img src="img/c11.jpg"> </div>
+              <div> <img src="img/c12.jpg"> </div>
             </div>
           </div>
         </div>
@@ -319,16 +485,20 @@
     <div id="bottom">
       <div id="footer" class="d-flex">
         <div class="card-img-overlay d-flex">
-          <div class="my-auto mx-auto text-center text-white lh-1">
-            <object data="svg/bird.svg" width="100"></object>
-            <h1 class="my-3">Rais & Mala</h1>
+          <div class="my-auto mx-auto text-center text-white lh-1" data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500">
+            <img src="svg/bird.svg" width="100" data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500">
+            <h1 class="my-3" data-aos="fade-up" data-aos="fade-down" data-aos-duration="2500">Rais & Mala</h1>
             <br>
           </div>
         </div>
       </div>
-      
+    <div id="copyright" class="p-3 d-flex justify-content-center align-items-center flex-column">
+      <h6 class="text-muted fst-italic">Made with ♡ by Drevi</h6>
+      <h5>
+        <a href="http://wa.me/6289652153135"><i class="fab fa-whatsapp "></i></a>
+        <a href="https://www.instagram.com/dream.visualisation/"><i class="fab fa-instagram "></i></a>
+      </h5>
     </div>
-
 
     <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -345,10 +515,13 @@
     <!-- AddEvent script -->
     <script type="text/javascript" src="https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
 
+    <!-- owl carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <!-- inisialisasi aos -->
-    <!-- <script>
+    <script>
       AOS.init();
-    </script> -->
+    </script>
 
 
     <!-- AddEvent Settings -->
@@ -360,11 +533,73 @@
               office365  : {show:true, text:"Office 365 <em>(online)</em>"},
               outlook    : {show:true, text:"Outlook"},
               outlookcom : {show:true, text:"Outlook.com <em>(online)</em>"},
-              yahoo      : {show:true, text:"Yahoo <em>(online)</em>"}
+              yahoo      : {show:true, text:"Yahoo <em>(online)</em>"},
           });
       };
-      </script>
+    </script>
 
+    <!-- Audio -->
+    <script>
+      const musik = new Audio('audio/audio.mp3');
+        $('#t1').hide();
+        $('#t2').hide();
+        $('#t3').hide();
+        $('#t4').hide();
+        $('#t5').hide();
+        $('.t6').hide();
+      function playMusik(){
+        musik.play();
+        musik.loop = true;
+        // musik.currentTime += 55.0;
+        document.querySelector('#ikon-musik').innerHTML = `
+          <i class="fas fa-volume-up my-float"></i>
+        `;
+        $('#t1').delay(700).fadeIn(2000,'linear');
+        $('#t2').delay(800).fadeIn(2000,'linear');
+        $('#t3').delay(900).fadeIn(2000,'linear');
+        $('#t4').delay(1000).fadeIn(2000,'linear');
+        $('#t5').delay(1100).fadeIn(2000,'linear');
+        $('.t6').delay(1200).fadeIn(2000,'linear');
+      }
+
+      function togglePause() {
+        if (musik.paused && musik.currentTime > 0 && !musik.ended) {
+            musik.play();
+            musik.loop = true;
+            document.querySelector('#ikon-musik').innerHTML = `
+              <i class="fas fa-volume-up my-float"></i>
+            `;
+          } else {
+            musik.pause();
+            document.querySelector('#ikon-musik').innerHTML = `
+              <i class="fas fa-volume-off my-float"></i>
+            `;
+          }
+      }
+    
+    </script>
+
+    <!-- scroll to top -->
+    <script>
+      var mybutton = document.getElementById("toTop");
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 3000) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      function toTop(){
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        })
+      }
+    </script>
 
     <!-- custom js -->
     <script>
@@ -376,14 +611,14 @@
             <div class="chat">
               <div class="card mb-3">
                 <div class="card-body">
-                  <h5 class="card-title fs-6">
+                  <h5 class="card-title fs-6" style="color: #a59071">
                     ${item.nama}
                     <span class="badge badge-sm rounded-pill ${item.is_hadir == '1' ? 'bg-success' : 'bg-danger'}"
                       >${item.is_hadir == '1' ? '<i class="fas fa-check"> </i>' : '<i class="fa fa-times"> </i>'}</span
                     >
                   </h5>
 
-                  <p class="card-text text-muted">
+                  <p class="card-text" style="color: #715f44">
                     ${item.pesan}
                   </p>
                 </div>
@@ -423,9 +658,32 @@
       }, 1000);
     </script>
 
-    <!-- Fetch pesan -->
+    <!-- Website dimulai pesan -->
     <script>
       $(document).ready(function(){        
+
+        
+        // modal
+        $("#modal").modal('show');
+
+        // owl carousel
+        $(".owl-carousel").owlCarousel({
+          dots: true,
+          stagePadding: 50,
+          loop: true,
+          margin: 30,
+          responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:3
+          },
+          1000:{
+              items:5
+          }
+        }
+        });
 
         $('#form-pesan').submit(function(e){
           e.preventDefault();
